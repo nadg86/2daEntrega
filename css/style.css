@@ -37,8 +37,18 @@ header {
 
 /* INDEX */
 
-/* PIE */
 
+
+.carousel {
+    width: 75%;
+    height: 50%;
+}
+.imgCarousel {
+    width: 50%;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
 .contenedorFotoPie {
     display: flex;
     width: 100%;
@@ -49,21 +59,21 @@ header {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    width: 100%; /* Ancho deseado del contenedor */
+    width: 100%; 
     padding: 0%;
 }
 
 .imagenPie {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionarla */
+    object-fit: cover; 
 }
 
 .boton-superpuesto {
     position: absolute;
     width: 25%;
-    bottom: 50%; /* Alinea el botón en la parte inferior del contenedor */
-    right: 40%; /* Alinea el botón en la parte derecha del contenedor */
+    bottom: 50%; 
+    right: 40%; 
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -73,8 +83,7 @@ header {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    flex: 1; /* Distribuye el espacio disponible entre los botones */
-    margin: 5px; /* Agrega espacio entre los botones */
+  
 }
 
 .boton-superpuesto:hover {
@@ -82,29 +91,6 @@ header {
     background-color: rgb(148, 144, 140)
 }
 
-
-
-
-.hoverable-imagen {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .imagen-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: yellow; /* Cambia el color que desees */
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  /* FIN DE PRUEBA */
 
 /* PROMOS */
 
