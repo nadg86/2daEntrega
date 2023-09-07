@@ -1,17 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-}
+ 
 
-.contenedorPadre {
-    margin: 5px;
-    padding: 5px;
-  
+/* HEADER */
+
 }
 
 .miLogo {
     width: 300px;
-    padding: 10px 5px 0px;
+    padding: 5px;
     
 }
 
@@ -23,21 +21,12 @@
 
 header {
     margin: 0px;
-    padding: 5px 0px;
+    padding: 5px 5%;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     color: black;
 }
-
-.barra-nav {
-    margin: 10px 0px;
-}
-
-/* INDEX */
-
-
-
-/* PROMOS */
 
 .miLink:hover {
     background-color: rgb(92, 89, 86);
@@ -45,7 +34,42 @@ header {
 }
 
 
-.tituloProductos {
+/* INDEX */
+
+/* CAROUSEL */
+
+.contenedorCarousel {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    align-content: center;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.imgCarousel {
+    width: 100%;
+   justify-content: center;
+}
+
+/* PIE */
+
+.contenedorFotoPie {
+    display: flex;
+    width: 100%;
+}
+
+.imgPie {
+    width: 100%;
+}
+
+/* PROMOS */
+
+
+
+.tituloPromos {
         margin-left: 0px;
         margin-right: 0px;
         background-color: antiquewhite;
@@ -56,48 +80,68 @@ header {
         padding: 16px;
 }
 
-.tituloProductos h2 {
+.tituloPromos h2 {
     font-size: 36px;
     color: brown;
 
 }
 
-.card {
-    border: 4px solid pink;
-    border-radius: 10px;
-    background-color: antiquewhite;
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    justify-content: end;
+}
+
+.footer-container {
+    margin-bottom: 0px;
+}
+
+
+/* CONTACTO */
+
+.contacto {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px;
-    margin: 10px;
-   
-}
-
-.card {
-    height: auto;
-    width: 100%;
-}
-
-.encabezadoTarjeta {
-    font-size: 20px;
     color: brown;
+    padding: 10px;
+}
+
+form {
+    margin-top: 16px;
+
+}
+label {
+    display: block;
     font-weight: bold;
-    text-transform: uppercase;
-}
-
-.textoTarjeta {
-    text-transform: lowercase;
-    font-size: 14px;
-    color: black;
-}
-
-.imgDepi {
-    width: 100%;
-}
-
-.row {
-    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: grey;
 }
 
 
+input[type="text"], 
+textarea {
+    display: block;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.formularioContacto {
+    background-color: #333;
+    color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+}

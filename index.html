@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <div>
+
+    <div class="contenedor-padre-index">
         <header class="navbar navbar-expand-lg miFondo">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -23,7 +24,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse" id="navbarNav">
+                <nav class="collapse navbar-collapse barra-nav" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link miLink" aria-current="page" href="index.html">Home</a>
@@ -40,7 +41,6 @@
                         <li class="nav-item">
                             <a class="nav-link miLink" href="html/contacto.html">Contacto</a>
                         </li>
-
                     </ul>
                 </nav>
             </div>
@@ -83,10 +83,97 @@
         </main>
     </div>
 
+    <div class="container contenedorCarousel">
+        <h1>Carrusel de Cards</h1>
+
+        <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores de Carrusel -->
+            <ul class="carousel-indicators">
+                <li data-target="#cardCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#cardCarousel" data-slide-to="1"></li>
+                <li data-target="#cardCarousel" data-slide-to="2"></li>
+            </ul>
+
+            <!-- Contenido del Carrusel -->
+            <div class="carousel-inner contenidocarousel">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="img/27900352-beea-447d-895c-8ce9bb96b57e_alta-aspect-ratio_default_0.webp"
+                            class="card-img-top contenedorImg" alt="Imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Contenido de la tarjeta 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item contenidocarousel">
+                    <div class="card">
+                        <img src="img/depilacionlaserba1-1024x576.webp" class="card-img-top contenedorImg"
+                            alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Contenido de la tarjeta 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item contenidocarousel">
+                    <div class="card">
+                        <img src="img/depilacionlaserba1-1024x576.webp" class="card-img-top contenedorImg"
+                            alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Contenido de la tarjeta 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Carrusel -->
+            <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="contenedorFotoPie">
+        <div class="fotoPie">
+            <div>
+                <img src="img/27900352-beea-447d-895c-8ce9bb96b57e_alta-aspect-ratio_default_0.webp" alt=""
+                    class="imgPie">
+            </div>
+        </div>
+        <div class="fotoPie">
+            <div>
+                <img src="img/27900352-beea-447d-895c-8ce9bb96b57e_alta-aspect-ratio_default_0.webp" alt=""
+                    class="imgPie">
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-light text-center py-3">
+        <div class="footer-container">
+            <p>&copy; 2023 Depi Style</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- Agrega los enlaces a los scripts de Bootstrap y jQuery si no los tienes ya -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
 </body>
 
 </html>

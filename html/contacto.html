@@ -10,50 +10,86 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <header class="navbar navbar-expand-lg miFondo">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img class="miLogo" src="../img/logo.png" alt="Logo Depi Style">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tratamiento.html">Tratamiento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="promos.html">Promos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sucursales.html">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    
-                </ul>
-            </nav>
+    <div class="contendor-padre-contacto">
+        <header class="navbar navbar-expand-lg miFondo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="miLogo" src="../img/logo.png" alt="Logo Depi Style">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link miLink" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miLink" href="tratamiento.html">Tratamiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miLink" href="promos.html">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miLink" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link miLink" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+    <body>
+        <div class="container">
+            <h1 class="contacto" >Envianos tu consulta</h1>
+            <p>Por favor, completa el formulario para ponerte en contacto con nosotros.</p>
+
+            <form action="procesar_formulario.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <input class="formularioContacto" type="submit">
+                <input class="formularioContacto" type="reset">
+            </form>
         </div>
-    </header>
 
-    <main>
+        <footer class="text-light text-center py-3">
+            <div class="footer-container">
+                <p>&copy; 2023 Depi Style</p>
+            </div>
+        </footer>
 
-    </main>
+        <!-- Agrega los enlaces a los scripts de Bootstrap y jQuery si no los tienes ya -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>
