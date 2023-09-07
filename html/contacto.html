@@ -49,11 +49,8 @@
         </header>
     </div>
 
-
-    <body>
-        <div class="container">
-            <h1 class="contacto" >Envianos tu consulta</h1>
-            <p>Por favor, completa el formulario para ponerte en contacto con nosotros.</p>
+        <div class="containerContacto">
+            <h1 class="contacto">Envianos tu consulta</h1>
 
             <form action="procesar_formulario.php" method="POST">
                 <div class="form-group">
@@ -63,7 +60,7 @@
 
                 <div class="form-group">
                     <label for="correo">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="correo" name="correo" required>
+                    <input type="text" class="form-control" id="correo" name="correo" required>
                 </div>
 
                 <div class="form-group">
@@ -76,20 +73,24 @@
             </form>
         </div>
 
+        
+
         <footer class="text-light text-center py-3">
             <div class="footer-container">
                 <p>&copy; 2023 Depi Style</p>
             </div>
         </footer>
 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+
         <!-- Agrega los enlaces a los scripts de Bootstrap y jQuery si no los tienes ya -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
     </body>
 
 </html>
