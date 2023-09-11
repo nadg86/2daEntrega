@@ -5,6 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index</title>
+    <!-- Referencia al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Referencia a jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Referencia a Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <!-- Referencia al archivo JavaScript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- BS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -14,66 +26,63 @@
 </head>
 
 
-<body>
+<body class="bg-s">
 
     <header>
 
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="#">
                     <img class="imgLogo" src="img/logo.png" alt=" Logo Depi Style">
                 </a>
 
-                <!-- BOTON DEL MENU -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- ELEMENTOS DEL MENU -->
+
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item btnHeader">
                             <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Depilacion Laser</a>
+                        <li class="nav-item btnHeader">
+                            <a class="nav-link" href=".//html/depilacionlaser.html">Depilacion Laser</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item btnHeader">
+                            <a class="nav-link" href=".//html/centros.html">Centros</a>
+                        </li>
+                        <li class="nav-item dropdown btnHeader">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" href="#">Centros</a>
-                            <ul class="dropdown-menu bg-secundary">
+                                data-bs-toggle="dropdown" href=".//html/preciosypromociones.html">Precios y
+                                promociones</a>
+                            <ul class="dropdown-menu desplegable">
                                 <li>
-                                    <a class="dropdown-item" href="">Recoleta</a>
+                                    <a class="dropdown-item" href=".//html/promociones.html">Promociones</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="">Lomas de Zamora</a>
-                                </li>
-                            </ul>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" href="#">Precios y promociones</a>
-                            <ul class="dropdown-menu bg-secundary">
-                                <li>
-                                    <a class="dropdown-item" href="">Promociones</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="">Precios por zonas</a>
+                                    <a class="dropdown-item" href="">Precios por zona</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-
-                    <hr class="iconosRedes">
-
-                    <ul>
-                        <li>
+                    <hr class="hr1">
+                    <ul class="navbar-nav flex-row flex-wrap">
+                        <li class="nav-item col-6 col-md-auto icons">
                             <i class="bi bi-whatsapp"></i>
+                            <small class="d-md-none ms-2">whatsapp</small>
                         </li>
-                        <li>
+                        <li class="nav-item col-6 col-md-auto icons">
                             <i class="bi bi-facebook"></i>
+                            <small class="d-md-none ms-2">Facebook</small>
                         </li>
-                        <li>
+                        <li class="nav-item col-6 col-md-auto icons">
                             <i class="bi bi-instagram"></i>
+                            <small class="d-md-none ms-2">Instagram</small>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto icons">
+                            <i class="bi bi-twitter"></i>
+                            <small class="d-md-none ms-2">Twitter</small>
                         </li>
                     </ul>
                 </div>
@@ -82,6 +91,54 @@
         </nav>
 
     </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner imgCarousel">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/27900352-beea-447d-895c-8ce9bb96b57e_alta-aspect-ratio_default_0.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/6050d2f037c6ea3d0cebe664_laser-removal.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/big_crop_depilacion-zona-intima.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, inventore autem quas officiis quaerat earum,
+        soluta itaque sit fugit rerum quod. Impedit quam aut in soluta quibusdam eligendi non sit!</p>
+
+
+
+
+
 
 
 

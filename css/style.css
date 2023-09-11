@@ -1,22 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
 }
 
-
 body {
     background-color: white;
 }
+
 /* HEADER */
 
 header {
     background-color:antiquewhite;
     text-transform: uppercase;
-    font: bold solid black 1px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #525252;
+}
+button {
+    margin: 10px;
+    border: 1px;
 }
 
 .imgLogo {
     width: 100%;
-  width: 200px;
+    max-width: 200px;
 }
 
+.desplegable {
+    background-color: #fafafa;
+    border: none;
+}
+
+
+.icons {
+    padding: 5px;
+}
+
+.btnHeader:hover {
+    background-color: rgb(198, 196, 196);
+    border-radius: 5px;
+}
+
+/* CAROUSEL */
+
+.carousel-inner a {
+    max-height: 39rem;
+}
