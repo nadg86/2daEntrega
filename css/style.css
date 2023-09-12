@@ -14,7 +14,7 @@ body {
 header {
     background-color:antiquewhite;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #525252;
 }
@@ -43,8 +43,119 @@ button {
     border-radius: 5px;
 }
 
-/* CAROUSEL */
+/* CAROUSEL INDEX*/
 
-.carousel-inner a {
-    max-height: 39rem;
+section {
+    padding-top: 30px;
+}
+
+.carousel-inner {
+    max-height: 39rem; 
+}
+
+
+.imgCarousel {
+    width: 100%;
+ 
+}
+
+/* MAIN INDEX*/
+
+h1 {
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-with:786px) {
+    #intro {
+        width: 90% !important;
+    }
+    .soprano-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-with: 576) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
 }
