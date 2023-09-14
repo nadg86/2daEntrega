@@ -36,8 +36,9 @@
                     <img class="imgLogo" src="../img/logo.png" alt=" Logo Depi Style">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn-desplegable" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -94,28 +95,32 @@
 
     </header>
 
-    <h1>Contact Us</h1>
+    <main class=" container flex-wrap">
+        <h1 class="contacto">Envianos tu consulta</h1>
 
-    <div class="container">
-        <form action="process_form.php" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+        <div class="container container-fluid" id="contenedor-formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
 
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Te responderemos a la brevedad"></textarea>
+
+            <input class="formularioContacto" type="submit">
+            <input class="formularioContacto" type="reset">
+        </div>
+
+    </main>
     <!-- FOOTER -->
-    
+
     <footer>
         <p class="fs-6 px-3 pt-3">Depi Style - Todos los derechos reservados 2023</p>
         <div id="icons">
