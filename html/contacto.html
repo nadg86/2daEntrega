@@ -96,6 +96,7 @@
     </header>
 
     <main class=" container flex-wrap">
+
         <h1 class="contacto">Envianos tu consulta</h1>
 
         <div class="container container-fluid" id="contenedor-formulario">
@@ -112,13 +113,23 @@
             <input type="text" id="telefono">
 
             <label for="mensaje">Mensaje</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Te responderemos a la brevedad"></textarea>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                placeholder="Te responderemos a la brevedad"></textarea>
 
-            <input class="formularioContacto" type="submit">
-            <input class="formularioContacto" type="reset">
+            <input class="formularioContacto" id="btn-enviar" type="submit">
+            <input class="formularioContacto" id="btn-enviar" type="reset">
         </div>
 
     </main>
+
+    <section class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="wave">
+            <path fill="#c095a0" fill-opacity="1"
+                d="M0,32L120,64C240,96,480,160,720,170.7C960,181,1200,139,1320,117.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
     <!-- FOOTER -->
 
     <footer>
