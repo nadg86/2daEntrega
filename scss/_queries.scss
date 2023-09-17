@@ -32,3 +32,19 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 825px) {
+    .formulario-contacto {
+        grid-template-columns: 1fr !important; 
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario-contacto form {
+        display: flex;
+        flex-direction: column; /* Cambiar a una sola columna */
+    }
+    .formulario-contacto form p {
+        margin-bottom: 10px; /* Agregar espacio entre los elementos en una columna */
+    }
+}
