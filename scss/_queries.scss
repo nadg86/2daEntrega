@@ -1,0 +1,34 @@
+/*Queries*/
+
+
+@media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+    }
+
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-Width:576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+    .contenedor-promos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 645px) {
+    .contenedor-promos {
+        grid-template-columns: 1fr;
+    }
+}
