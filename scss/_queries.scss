@@ -42,9 +42,20 @@
 @media (max-width: 768px) {
     .formulario-contacto form {
         display: flex;
-        flex-direction: column; /* Cambiar a una sola columna */
+        flex-direction: column; 
     }
     .formulario-contacto form p {
-        margin-bottom: 10px; /* Agregar espacio entre los elementos en una columna */
+        margin-bottom: 10px; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado-wraper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
