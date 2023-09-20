@@ -61,7 +61,7 @@
 
 #parrafo-formulario {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
 }
 
@@ -78,7 +78,7 @@
 .formulario-contacto {
   form {
     gap: 10px;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,18 +116,21 @@
   }
 
 
-  #boton-formulario {
-    background-color: #d3d3d3;
-    color: rgb(108, 108, 108);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0%;
-  }
 }
 
-#boton-formulario:hover {
-  color: #fafafa;
-  background-color: rgb(69, 67, 67);
+.contenedor-btn-contacto {
+  text-align: center;
+}
+.btn-contacto {
+  padding: 10px 20px;
+  border: rgb(235, 235, 234) solid 0.05px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #919191;
+  }
 }

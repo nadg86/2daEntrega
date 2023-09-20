@@ -46,6 +46,36 @@ button {
   color: #f0ccd5;
 }
 
+.seccion-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+  align-items: center;
+  max-width: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo-parrafo {
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.parrafo-index p {
+  font-size: 16px;
+}
+
+.contenedor-imagen {
+  max-width: 400px;
+  height: auto;
+}
+
+#img-inicio {
+  height: 100%;
+  object-fit: cover;
+}
+
 /*General*/
 * {
   margin: 0%;
@@ -59,7 +89,7 @@ body {
 
 h1 inicio {
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 36px;
 }
 
 .sectionOne {
@@ -80,6 +110,7 @@ h1 inicio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
+  gap: 1px;
 }
 
 .columna-pie {
@@ -125,11 +156,11 @@ footer {
 footer p {
   text-align: center;
   color: #fafafa;
-  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
 }
 
 #icons i {
-  font-size: 20px;
+  font-size: 26px;
   padding: 0 8px;
   color: #fafafa;
 }
@@ -191,7 +222,7 @@ footer p {
 
 #parrafo-formulario {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
 }
 
@@ -207,7 +238,7 @@ footer p {
 
 .formulario-contacto form {
   gap: 10px;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -238,19 +269,22 @@ footer p {
   font-weight: 700;
   width: 100%;
 }
-.formulario-contacto #boton-formulario {
-  background-color: #d3d3d3;
-  color: rgb(108, 108, 108);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0%;
+
+.contenedor-btn-contacto {
+  text-align: center;
 }
 
-#boton-formulario:hover {
-  color: #fafafa;
-  background-color: rgb(69, 67, 67);
+.btn-contacto {
+  padding: 10px 20px;
+  border: rgb(235, 235, 234) solid 0.05px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn-contacto:hover {
+  background-color: #919191;
 }
 
 /*Promocionnes*/
@@ -278,7 +312,6 @@ footer p {
 }
 
 .container-promociones {
-  border: 1px solid red;
   margin-bottom: 30px;
   padding: 20px;
   justify-content: center;
@@ -307,6 +340,11 @@ footer p {
 .columna-texto-promos h3 {
   font-size: 32px;
   font-weight: bolder;
+}
+
+div img {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*seccion zonas sueltas*/
@@ -353,7 +391,6 @@ footer p {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 100%;
-  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -367,7 +404,7 @@ footer p {
   border: 1px solid;
   padding: 20px;
   box-shadow: 0px 3px 5px #4b4a4a;
-  margin: 10px;
+  margin: 50px;
   border-radius: 5px;
 }
 .tarjeta img {
@@ -378,11 +415,11 @@ footer p {
 }
 
 .btn {
-  background-color: #333;
+  background-color: #d1d1d1;
   border: none;
-  color: #fafafa;
+  color: black;
   padding: 10px 20px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 10px;
@@ -402,25 +439,9 @@ footer p {
   width: 100%;
 }
 
-/*seccion medio*/
-.sectionOne {
-  justify-content: center;
-}
-
-/* Pie de promociones */
-#seccion-pie-promo {
-  width: 100%;
-}
-
-.contenedor-img-pie {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-div img {
-  width: 100%;
-  max-width: 100%;
+.card-img-top {
+  padding: 10px;
+  height: 45%;
 }
 
 /*Accordion*/
@@ -440,7 +461,15 @@ main section h1 {
   font-weight: bold;
 }
 
-/*Iframe*/
+/*Iframe centros*/
+.titulo-centros {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
 #local {
   text-align: center;
   max-width: 100%;
