@@ -1,5 +1,6 @@
 /*Header*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@100&display=swap");
 header {
   background-color: #f0ccd5;
   text-transform: uppercase;
@@ -53,7 +54,6 @@ button {
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
 }
 
 h1 inicio {
