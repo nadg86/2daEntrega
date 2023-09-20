@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Header*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Roboto:wght@100&display=swap");
 header {
@@ -253,11 +254,98 @@ footer p {
 }
 
 /*Promocionnes*/
+/*Encabezado promociones*/
 #titulo-promos {
   text-align: center;
-  font-size: 26px;
-  margin: 20px;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   padding: 5px;
+}
+
+.contenedor-encabezado {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#seccion-encabezado-promos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-promociones {
+  border: 1px solid red;
+  margin-bottom: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.contenedor-imagen {
+  max-width: 400px;
+  height: auto;
+}
+
+.imagen-tamaño {
+  height: 100%;
+  object-fit: cover;
+}
+
+.columna-texto-promos {
+  text-align: center;
+  align-items: center;
+}
+.columna-texto-promos h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-decoration: underline 6px solid #f0ccd5;
+}
+.columna-texto-promos h3 {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+/*seccion zonas sueltas*/
+.zonas-sueltas {
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.contenedor-btn-promos {
+  text-align: center;
+}
+
+.btn-promociones {
+  padding: 10px 20px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.btn-promociones:hover {
+  background-color: #919191;
+}
+
+.accordion-item-promos1 {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.accordion-item-promos2 {
+  border-bottom: 1px solid black;
+}
+
+/*Seccion tarjetas*/
+#h2-giftcards {
+  text-align: center;
+  font-size: 36px;
 }
 
 .contenedor-promos {
@@ -314,6 +402,7 @@ footer p {
   width: 100%;
 }
 
+/*seccion medio*/
 .sectionOne {
   justify-content: center;
 }
